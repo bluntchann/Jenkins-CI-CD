@@ -44,6 +44,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 
 --
 📂 Project Structure
+```plaintext
 .
 ├── api/                       # Django app (backend API)
 ├── mynotes/                  # React app (frontend)
@@ -57,12 +58,11 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 ├── requirements.txt          # Backend dependencies
 ├── manage.py                 # Django admin script
 └── README.md                 # Project documentation
-
+````
 --
 🎓 What You’ll Learn
 
 - How to containerize a full-stack Django + React app using Docker
-
 -Running multi-container applications with Docker Compose
 - Building CI/CD pipelines with Jenkins
 - Using Docker Hub for image hosting
