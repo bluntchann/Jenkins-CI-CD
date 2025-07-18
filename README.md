@@ -57,7 +57,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 ├── requirements.txt                         # Python dependencies
 ├── manage.py                                # Django management script
 └── README.md                                # Project documentation
-
+---
 ##🎓 What You’ll Learn
 
 -How to containerize a full-stack Django + React app using Docker
@@ -67,7 +67,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 -Set up CI/CD workflows connected to GitHub
 -Deploy web applications on cloud VMs (e.g., AWS EC2 t2.micro)
 -Use NGINX as a reverse proxy for production-grade exposure
-
+---
 
 CI/CD Pipeline Diagram:
 
