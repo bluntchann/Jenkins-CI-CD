@@ -1,50 +1,48 @@
-Simple Notes App with Jenkins CI/CD
-This is a full-stack Notes App built using React and Django, containerized with Docker, and deployed using Jenkins CI/CD. As part of a student project, the app runs on port 8000 and demonstrates core DevOps practices including Dockerization, automated builds, and deployment via Docker Hub.
+# 🚀 CI/CD Pipeline for Full-stack Notes App using Jenkins & Docker
 
-⚙️ Tech Stack
-Frontend: React
+This project demonstrates an end-to-end CI/CD pipeline for a full-stack Django + React Notes App.  
+As part of  DevOps project, I containerized the application using Docker, automated builds and deployments using Jenkins, and hosted the app on an AWS EC2 instance (t2.micro).
+The app runs on port 8000, with optional reverse proxy via NGINX.
 
-Backend: Django
+---
 
-CI/CD: Jenkins
+## 🧰 Tech Stack
 
-Containerization: Docker
+- Frontend: React  
+- Backend: Django  
+- Containerization: Docker  
+- CI/CD: Jenkins  
+- Image Hosting: Docker Hub  
+- Web Server : NGINX  
+- Cloud Provider: AWS EC2 (t2.micro)  
+- Deployment Port: 8000  
 
-Image Hosting: Docker Hub
+---
 
-Web Server (Optional): Nginx
+## 📦 Requirements
 
-Deployment Port: 8000
+- Python 3.9  
+- Node.js  
+- Docker & Docker Hub account  
+- Jenkins (installed locally or on AWS EC2)  
+- GitHub repository for source code  
+-  NGINX for reverse proxy  
+- AWS EC2 instance (Ubuntu, t2.micro)  
 
-📦 Requirements
-Python 3.9
+---
 
-Node.js
+## ✅ What’s Implemented
 
-Docker & Docker Hub account
+- 🐳 Dockerfile for containerizing the Django-based full-stack app  
+- 🔄 Jenkins CI/CD pipeline that:  
+  - Pulls source code from GitHub  
+  - Builds the Docker image  
+  - Pushes the image to Docker Hub  
+  - Runs the container on AWS EC2 (port 8000)  
+- 🌐 App exposed via: `http: your ip address/:8000`  
+- 🌍 * NGINX reverse proxy for domain-based access  
 
-Jenkins (installed or via Docker)
+---
 
-GitHub repository for source code
+## 📂 Project Structure
 
-(Optional) Nginx for reverse proxy
-
-🚀 Setup & Deployment
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/LondheShubham153/django-notes-app.git
-cd django-notes-app
-2. Docker Build
-bash
-Copy
-Edit
-docker build -t notes-app .
-3. Docker Run
-bash
-Copy
-Edit
-docker run -d -p 8000:8000 notes-app:latest
-App runs at:
-http://localhost:8000
