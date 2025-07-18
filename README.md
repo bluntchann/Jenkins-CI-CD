@@ -45,4 +45,29 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 ---
 
 ## 📂 Project Structure
+├── api/                                     # Django API app
+├── mynotes/                                 # React frontend
+├── notesapp/                                # Django project
+├── staticfiles/                             # Collected static files
+├── nginx/                                   # NGINX config
+├── Dockerfile                               # Backend Docker build
+├── docker-compose.yml                       # Orchestrates services
+├── Jenkinsfile                              # CI/CD pipeline definition
+├── .env                                     # Environment variables
+├── requirements.txt                         # Python dependencies
+├── manage.py                                # Django management script
+└── README.md                                # Project documentation
+
+##🎓 What You’ll Learn
+
+-How to containerize a full-stack Django + React app using Docker
+-Build and run multi-container applications using Docker Compose
+-Automate builds, testing, and deployment using Jenkins pipelines
+-Push and pull Docker images with Docker Hub
+-Set up CI/CD workflows connected to GitHub
+-Deploy web applications on cloud VMs (e.g., AWS EC2 t2.micro)
+-Use NGINX as a reverse proxy for production-grade exposure
+
+
+CI/CD Pipeline Diagram:
 
