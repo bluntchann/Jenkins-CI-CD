@@ -43,31 +43,65 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - 🌍 * NGINX reverse proxy for domain-based access  
 
 --
+📂 Project Structure
+.
+├── api/                       # Django app (backend API)
+├── mynotes/                  # React app (frontend)
+├── notesapp/                 # Django project files
+├── staticfiles/              # Collected static assets
+├── nginx/                    # NGINX configuration 
+├── Dockerfile                # Backend Docker build file
+├── docker-compose.yml        # Compose file to run multi-container setup
+├── Jenkinsfile               # Jenkins pipeline configuration
+├── .env                      # Environment variables
+├── requirements.txt          # Backend dependencies
+├── manage.py                 # Django admin script
+└── README.md                 # Project documentation
 
-## 📂 Project Structure
-├── api/                                     # Django API app
-├── mynotes/                                 # React frontend
-├── notesapp/                                # Django project
-├── staticfiles/                             # Collected static files
-├── nginx/                                   # NGINX config
-├── Dockerfile                               # Backend Docker build
-├── docker-compose.yml                       # Orchestrates services
-├── Jenkinsfile                              # CI/CD pipeline definition
-├── .env                                     # Environment variables
-├── requirements.txt                         # Python dependencies
-├── manage.py                                # Django management script
-└── README.md                                # Project documentation
 --
-##🎓 What You’ll Learn
+🎓 What You’ll Learn
 
--How to containerize a full-stack Django + React app using Docker
--Build and run multi-container applications using Docker Compose
--Automate builds, testing, and deployment using Jenkins pipelines
--Push and pull Docker images with Docker Hub
--Set up CI/CD workflows connected to GitHub
--Deploy web applications on cloud VMs (e.g., AWS EC2 t2.micro)
--Use NGINX as a reverse proxy for production-grade exposure
----
+- How to containerize a full-stack Django + React app using Docker
 
+-Running multi-container applications with Docker Compose
+- Building CI/CD pipelines with Jenkins
+- Using Docker Hub for image hosting
+-Setting up automated pipelines connected to GitHub
+- Deploying web apps on AWS EC2 instances
+- Using NGINX as a reverse proxy for custom domain mapping
+
+--
+🧪 How to Run Locally
+1. Clone the repository
+```
+git clone https://github.com/LondheShubham153/django-notes-app.git
+```
+
+2. Build the app
+```
+docker build -t notes-app .
+```
+
+3. Run the app
+```
+docker run -d -p 8000:8000 notes-app:latest
+```
+--
 CI/CD Pipeline Diagram:
+![CI/CD Pipeline](mynotes/cicd.png)
+
+--
+
+📣 Feedback
+If you found this project helpful or have suggestions for improvement, feel free to:
+
+⭐ Star the repo
+
+📬 Open an issue
+
+🛠️ Submit a pull request
+
+💬 Reach out to me on LinkedIn or Email
+
+
 
