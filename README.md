@@ -42,7 +42,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - 🌐 App exposed via: `http: your ip address/:8000`  
 - 🌍 * NGINX reverse proxy for domain-based access  
 
----
+--
 
 ## 📂 Project Structure
 ├── api/                                     # Django API app
@@ -57,7 +57,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 ├── requirements.txt                         # Python dependencies
 ├── manage.py                                # Django management script
 └── README.md                                # Project documentation
----
+--
 ##🎓 What You’ll Learn
 
 -How to containerize a full-stack Django + React app using Docker
