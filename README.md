@@ -42,7 +42,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - 🌐 App exposed via: `http: your ip address/:8000`  
 - 🌍 * NGINX reverse proxy for domain-based access  
 
---
+---
 📂 Project Structure
 ```plaintext
 .
@@ -59,7 +59,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 ├── manage.py                 # Django admin script
 └── README.md                 # Project documentation
 ````
---
+---
 🎓 What You’ll Learn
 
 - How to containerize a full-stack Django + React app using Docker
@@ -70,7 +70,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - Deploying web apps on AWS EC2 instances
 - Using NGINX as a reverse proxy for custom domain mapping
 
---
+---
 🧪 How to Run Locally
 1. Clone the repository
 ```
@@ -90,7 +90,7 @@ docker run -d -p 8000:8000 notes-app:latest
 CI/CD Pipeline Diagram:
 ![CI/CD Pipeline](mynotes/cicd.png)
 
---
+---
 
 📣 Feedback
 If you found this project helpful or have suggestions for improvement, feel free to:
