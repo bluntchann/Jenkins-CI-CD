@@ -43,7 +43,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - 🌍 * NGINX reverse proxy for domain-based access  
 
 ---
-##📂 Project Structure
+## 📂 Project Structure
 ```plaintext
 .
 ├── api/                       # Django app (backend API)
@@ -60,7 +60,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 └── README.md                 # Project documentation
 ````
 ---
-##🎓 What You’ll Learn
+## 🎓 What You’ll Learn
 
 - How to containerize a full-stack Django + React app using Docker
 -Running multi-container applications with Docker Compose
@@ -71,7 +71,7 @@ The app runs on port 8000, with optional reverse proxy via NGINX.
 - Using NGINX as a reverse proxy for custom domain mapping
 
 ---
-##🧪 How to Run Locally
+## 🧪 How to Run Locally
 1. Clone the repository
 ```
 git clone https://github.com/LondheShubham153/django-notes-app.git
@@ -87,12 +87,12 @@ docker build -t notes-app .
 docker run -d -p 8000:8000 notes-app:latest
 ```
 ---
-##CI/CD Pipeline Diagram:
+## CI/CD Pipeline Diagram:
 ![CI/CD Pipeline](mynotes/cicd.png)
 
 ---
 
-##📣 Feedback
+## 📣 Feedback
 If you found this project helpful or have suggestions for improvement, feel free to:
 
 ⭐ Star the repo
